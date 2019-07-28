@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+
+        <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}assets/home/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}assets/home/css/_oc.css" />
+        <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}assets/home/css/style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
+
+        <title>{{ .Title }}</title>
+    </head>
+
+    <body>
+        <div id="container">
+
+            <header id="header-wrapper" class="wrapper-fluid">
+                <div id="header-wrapper-inner">
+                    <div class="wrapper-fixed">
+
+                        <div id="header-logo">
+                            <a href="index.html">
+                                <img src="{{ .Site.BaseURL }}assets/home/img/logo-dark-science-medium-min.png" alt="dark.SCIENCE Logo" />
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div id="header-homepage">
+                        <a href="{{ .Site.BaseURL }}">Homepage</a>
+                    </div>
+
+                </div>
+            </header>
+
+            <main id="main-wrapper" role="main" class="wrapper-fluid">
+
+
+                <section id="bio-heading">
+                    <div class="wrapper-fixed">
+
+                        <div id="bio-left">
+                            <div id="bio-graphic">
+                                <img src="{{ .Site.BaseURL }}assets/home/img/{{ .Params.image }}" alt="{{ .Title }}" />
+                            </div>
+
+                        </div>
+
+                        <div id="bio-right">
+
+                            <h1>{{ .Title }}</h1>
+
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="page-content">
+                    <div class="wrapper-fixed">
+                        {{ .Content }}
+                    </div>
+                </section>
+
+            </main>
+
+            <footer id="footer-wrapper" class="wrapper-fluid">
+                <div class="wrapper-fixed">
+
+                    <div class="column-wrapper">
+
+                        <div class="column b-1-2 left">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="column b-1-2 right">
+                            <img src="{{ .Site.BaseURL }}assets/home/img/logo-dark-science-small.png" alt="dark.SCIENCE logo" />
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script type="text/javascript" src="{{ .Site.BaseURL }}assets/home/assets/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="{{ .Site.BaseURL }}assets/home/assets/script.js"></script>
+        <!--[if (gte IE 6)&(lte IE 8)]>
+          <script type="text/javascript" src="assets/selectivizr-min.js"></script>
+        <![endif]-->
+
+    </body>
+</html>
